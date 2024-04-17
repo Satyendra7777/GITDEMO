@@ -1,0 +1,146 @@
+/* styles.css */
+
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+}
+:root{
+    background-color: black;
+    --main-color:#0ef;
+    --bg-color:#323946;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header.sticky{
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+color: lightblue;
+font-size: 2.5rem;
+font-weight: 600;
+cursor: default;
+margin-left: 1.5rem;
+text-shadow: 0 0 .8rem lightblue ;
+}
+.logo:hover{
+    color:greenyellow;
+    font-size: 2.8rem;
+}
+.navbar a{
+    color: lightblue;
+    font-size: 1.3rem;
+    margin-left: 4rem;
+    transition: .2s;
+    text-shadow: 0 0 0.8rem lightblue ;
+}
+.navbar a:hover{
+    color:greenyellow ;
+    font-size:1.5rem;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 400px;
+    margin: 250px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-actions {
+    text-align: right;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contact h2{
+    color: var(--main-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 50rem;
+    margin: 3rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.input-box input,
+.contact form textarea {
+    width: 100%;
+    padding:1.5rem;
+    font-size: 1.5rem;
+
+    background: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.input-box input {
+    width: 49%;
+}
+.contact form placeholder{
+    color: var(--main-color);
+}
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}

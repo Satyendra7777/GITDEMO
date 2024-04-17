@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Event Management</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="./index.html" class="active">User login</a>
+            <a href="./user_sign_up.html">User Sign up</a>
+            <a href="./Vendor_login.html"> Vendor login</a>
+            <a href="./Vendor_sign_up.html">Vendor Sign up</a>
+            <a href="./contact.html">Contact Me</a>
+        </nav>
+       </header>
+
+    <div class="login-container">
+        <form id="loginForm" action="/submit-your-login-form" method="POST">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="userId">Enter Username: </label>
+                <input type="text" id="userId" name="userId" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="password"> Confirm Password: </label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit">signup</button>
+                <button type="button" id="cancelButton">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
